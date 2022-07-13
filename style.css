@@ -18,9 +18,19 @@ body {
 }
 
 .top-elements li {
-    display: inline-block;
+    display: flex;
     margin: 0.5em 0.5em;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-elements li i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 5px;
+
 }
 
 .top-elements li .icons {
