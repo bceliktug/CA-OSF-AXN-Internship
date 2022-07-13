@@ -1,10 +1,63 @@
-*{
+* {
     font-family: Lato;
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+}
 
-#rectangle{
-        width: 1498px;
-        height: 177px;
-        background-color: #ffffff;
+.top-elements {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0 100px 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top-elements li {
+    display: inline-block;
+    margin: 0.5em 0.5em;
+    align-items: stretch;
+}
+
+.top-elements li .icons {
+    /* padding: 10px 10px 10px 10px; */
+    width: 23px;
+    height: 23px;
+    opacity: 0.5;
+}
+
+
+
+#rectangle {
+    display: flex;
+    width: 1498px, auto;
+    height: 177px, auto;
+    background-color: #ffffff;
+    padding: 0% 0% 0% 5%;
+}
+
+#logo {
+    width: 147px;
+    height: 65px;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: "Lato";
+    src: url('698242188-Lato-Bla.eot');
+    src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
+        url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
+        url('698242188-Lato-Bla.woff') format('woff'),
+        url('698242188-Lato-Bla.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
