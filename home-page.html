@@ -15,7 +15,7 @@
 <body>
     <div>
         <nav id="navigation">
-            <a href="#"><img src="images/logo.png" id="logo" alt="HomePage"></a>
+            <a href="#"><img src="images/logo.png" style="width: 147px; height: 64px;" id="logo" alt="HomePage"></a>
             <div style="width: 100%;">
                 <ul class="top-elements">
                     <li class="dropdown" id="hover-menu">
@@ -117,6 +117,49 @@
             </div>
         </nav>
 
+        <div style="height: 600px; width: 100%; background-color: white;">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="images/background1.png"
+                        style="width: 870px; height: 485px; border-radius: 5px; background-color: black;">
+                    <div class="text"><a href="#">VIEW MORE</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/background2.png" style="width: 870px; height: 485px;  border-radius: 5px">
+                    <div class="text"><a href="#">VIEW MORE</a></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/background3.png" style="width: 870px; height: 485px;  border-radius: 5px">
+                    <div class="text"><a href="#">VIEW MORE</a></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#60;</a>
+                <a class="next" onclick="plusSlides(1)">&#62;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+
+        <div class="popular-items" style="height: 1283px; width: 100%; background-color: #262a32;">
+            <p>Popular Items</p>
+        </div>
+
+
+
+
+
+
+
 
     </div>
     <footer>
@@ -132,6 +175,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 
