@@ -14,7 +14,8 @@ body {
 }
 
 
-.top-elements #hover-menu {
+.top-elements #hover-menu,
+#hover-menu-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,6 +92,11 @@ body {
     color: white;
 }
 
+.carousel-caption {
+    top: 10%;  
+    bottom: auto;
+}
+
 
 #services-body {
     background-color: #262a32;
@@ -110,6 +116,12 @@ body {
 
 #hover-menu:hover {
     background-color: #262a32;
+    color: #ffffff !important;
+    border-bottom: 4px solid #84bc22;
+}
+
+#hover-menu-icon:hover {
+    background-color: #dddddd;
     color: #ffffff !important;
     border-bottom: 4px solid #84bc22;
 }
