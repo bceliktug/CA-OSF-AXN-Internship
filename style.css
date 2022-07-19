@@ -103,6 +103,20 @@ body {
     color: black;
 }
 
+.popular-items .card-deck{
+    margin-right: 14px;
+    margin-left: 14px;
+}
+
+.popular-items .card {
+    background-color: #262a32;
+}
+
+.popular-items .card-body {
+    background-color: white;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-bottom-right-radius: calc(0.25rem - 1px);
+}
 
 
 #lined-text {
@@ -112,7 +126,7 @@ body {
 #lined-text p {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     line-height: 0.1em;
 }
 
