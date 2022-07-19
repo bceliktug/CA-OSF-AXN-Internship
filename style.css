@@ -97,18 +97,29 @@ body {
     bottom: auto;
 }
 
-.footer {
-    width: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
+
 
 .footer a {
     color: black;
 }
 
+
+
+#lined-text {
+    text-align: center;
+}
+
+#lined-text p {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    line-height: 0.1em;
+}
+
+#lined-text span {
+    background: #262a32;
+    padding: 0 10px;
+}
 
 #services-body {
     background-color: #262a32;
