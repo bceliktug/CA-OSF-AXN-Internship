@@ -93,8 +93,20 @@ body {
 }
 
 .carousel-caption {
-    top: 10%;  
+    top: 10%;
     bottom: auto;
+}
+
+.footer {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.footer a {
+    color: black;
 }
 
 
