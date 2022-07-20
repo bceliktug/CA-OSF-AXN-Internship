@@ -2,6 +2,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+body a:hover {
+    text-decoration: none;
+}
+
 
 .top-elements {
     list-style-type: none;
@@ -125,12 +129,12 @@ body {
 }
 
 .hover-buttons .col {
-    padding-top: 50%;
+    padding-top: 35%;
 }
 
 .popular-items .card:hover .hover-buttons {
     visibility: visible;
-    background:linear-gradient(to top, rgba(28, 193, 103,.8), rgba(46, 211, 162,.8));    
+    background: linear-gradient(to top, rgba(28, 193, 103, .8), rgba(46, 211, 162, .8));
     display: flex;
     width: 100%;
     height: 100%;
