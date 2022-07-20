@@ -103,7 +103,7 @@ body {
     color: black;
 }
 
-.popular-items .card-deck{
+.popular-items .card-deck {
     margin-right: 14px;
     margin-left: 14px;
 }
@@ -116,6 +116,36 @@ body {
     background-color: white;
     border-bottom-left-radius: calc(0.25rem - 1px);
     border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
+.hover-buttons {
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.hover-buttons .col {
+    padding-top: 50%;
+}
+
+.popular-items .card:hover .hover-buttons {
+    visibility: visible;
+    background:linear-gradient(to top, rgba(28, 193, 103,.8), rgba(46, 211, 162,.8));    
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: calc(0.25rem - 1px);
+}
+
+.popular-items .btn {
+    border-radius: 100%;
+    border: none;
+    color: white;
+    font-size: 86px;
+    cursor: pointer;
 }
 
 
