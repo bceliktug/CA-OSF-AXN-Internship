@@ -102,6 +102,9 @@ body a:hover {
 }
 
 
+.footer {
+    margin-top: 50px;
+}
 
 .footer a {
     color: black;
@@ -144,12 +147,61 @@ body a:hover {
     border-radius: calc(0.25rem - 1px);
 }
 
+.popular-items .container .items {
+    display: none;
+}
+
+.popular-items .container .items:nth-child(1),
+.popular-items .container .items:nth-child(2) {
+    display: flex;
+}
+
+
 .popular-items .btn {
     border-radius: 100%;
     border: none;
     color: white;
     font-size: 86px;
     cursor: pointer;
+}
+
+.banner {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 35%;
+    width: inherit;
+    color: white;
+}
+
+.banner p {
+    position: absolute;
+    top: 55%;
+    width: inherit;
+    color: white;
+}
+
+.static-content {
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    background-color: #45413e;
+    height: auto;
+}
+
+.static-content .col {
+    padding: 25px 10px 10px 10px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
 }
 
 
