@@ -108,6 +108,7 @@ body a:hover {
 
 .footer a {
     color: black;
+    opacity: .5;
 }
 
 .popular-items .card-deck {
@@ -211,6 +212,15 @@ body a:hover {
     height: auto;
 }
 
+.oops {
+    height: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+
+}
+
 
 #lined-text {
     text-align: center;
@@ -225,6 +235,26 @@ body a:hover {
 
 #lined-text span {
     background: #262a32;
+    padding: 0 10px;
+}
+
+#lined-404 {
+
+    text-align: center;
+}
+
+#lined-404 p {
+    
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(70, 70, 70, 0.5);
+    line-height: 0.1em;
+
+}
+
+#lined-404 span {
+    background: #f1edea;
     padding: 0 10px;
 }
 
