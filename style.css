@@ -196,6 +196,11 @@ body a:hover {
     color: white;
 }
 
+.featured-products{
+    text-align: center;
+
+}
+
 .static-content {
     justify-content: center;
     text-align: center;
