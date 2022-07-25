@@ -299,6 +299,26 @@ body a:hover {
     padding: 0 10px;
 }
 
+#lined-services {
+
+    text-align: center;
+}
+
+#lined-services p {
+
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    line-height: 0.1em;
+
+}
+
+#lined-services span {
+    background: #f1edea;
+    padding: 0 10px;
+}
+
 #lined-slash {
     text-align: center;
 }
@@ -312,6 +332,8 @@ body a:hover {
     line-height: 0.1em;
 
 }
+
+
 
 #lined-slash span {
     background: #262a32;
@@ -350,6 +372,13 @@ body a:hover {
 #logo {
     width: 147px;
     height: 65px;
+}
+
+#services-top p{
+    padding-top: 13px;
+}
+#services-top .col {
+    padding-top: 18px;
 }
 
 
