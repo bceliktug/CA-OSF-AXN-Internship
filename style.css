@@ -226,12 +226,14 @@ body a:hover {
 
 }
 .swiper {
-    
+
     text-align: center;
     justify-content: space-around;
     width: 100%;
     height: auto;
 }
+
+
 
 .swiper-button-prev, .swiper-button-next{
     color: white !important;
@@ -259,8 +261,8 @@ body a:hover {
 
 }
 
-#other-page-hover a:hover {
-    color: #262a32;
+#other-page-hover p a:hover {
+    color: #262a32 !important;
 }
 
 #lined-text {
