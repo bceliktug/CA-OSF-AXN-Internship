@@ -196,7 +196,7 @@ body a:hover {
     color: white;
 }
 
-.featured-products{
+.featured-products {
     text-align: center;
 
 }
@@ -217,6 +217,39 @@ body a:hover {
     height: auto;
 }
 
+.featured-slider {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+.swiper {
+    
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: white !important;
+    top: 13% !important;
+    padding: 0px 110px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: larger !important;
+}
+
+.product {
+    max-width: 270px;
+    max-height: 310px;
+}
+
+
 .oops {
     height: auto;
     width: 100%;
@@ -226,6 +259,9 @@ body a:hover {
 
 }
 
+#other-page-hover a:hover {
+    color: #262a32;
+}
 
 #lined-text {
     text-align: center;
@@ -249,7 +285,7 @@ body a:hover {
 }
 
 #lined-404 p {
-    
+
     font-size: 48px;
     width: 100%;
     text-align: center;
@@ -260,6 +296,25 @@ body a:hover {
 
 #lined-404 span {
     background: #f1edea;
+    padding: 0 10px;
+}
+
+#lined-slash {
+    text-align: center;
+}
+
+#lined-slash p {
+
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+    line-height: 0.1em;
+
+}
+
+#lined-slash span {
+    background: #262a32;
     padding: 0 10px;
 }
 
