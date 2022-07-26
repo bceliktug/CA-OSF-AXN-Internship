@@ -225,6 +225,7 @@ body a:hover {
     display: flex;
 
 }
+
 .swiper {
 
     text-align: center;
@@ -235,7 +236,8 @@ body a:hover {
 
 
 
-.swiper-button-prev, .swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next {
     color: white !important;
     top: 13% !important;
     padding: 0px 110px;
@@ -259,6 +261,13 @@ body a:hover {
     padding-right: 15px;
     background-color: white;
 
+}
+
+.colors {
+    height: 19px;
+    width: 19px;
+    border-radius: 100%;
+    margin: 16px;
 }
 
 #other-page-hover p a:hover {
@@ -376,9 +385,10 @@ body a:hover {
     height: 65px;
 }
 
-#services-top p{
+#services-top p {
     padding-top: 13px;
 }
+
 #services-top .col {
     padding-top: 18px;
 }
