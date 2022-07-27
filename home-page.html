@@ -19,7 +19,8 @@
     <div>
         <!-- Header-Navigation Bar -->
         <nav id="navigation">
-            <a href="#"><img src="images/logo.png" style="width: 147px; height: 64px;" id="logo" alt="HomePage"></a>
+            <a href="#" class="osf-icon"><img src="images/logo.png" style="width: 147px; height: 64px;" id="logo"
+                    alt="HomePage"></a>
             <div style="width: 100%;">
                 <ul class="top-elements">
                     <li class="dropdown" id="hover-menu">
@@ -108,14 +109,27 @@
                                 src="images/Profile_User_Outline._Attribute_as_Situ_Herrera_from_Flaticon.com.png"
                                 alt="Profile" class="icons"></a>
                     </li>
-                    <li id="hover-menu-icon">
+
+
+                    <li id="hover-menu-icon" class="position-relative">
                         <a href="#"><img
                                 src="images/Heart_Outline_Rounded_Shape._Attribute_as_Freepik_from_Flaticon.com.png"
                                 alt="Likes" class="icons"></a>
+                        <span id="likeBadge"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-badge">
+                            0
+                        </span>
                     </li>
-                    <li id="hover-menu-icon">
+
+
+
+                    <li id="hover-menu-icon" class="position-relative">
                         <a href="#"><img src="images/Bag_For_Shopping._Attribute_as_SimpleIcon_from_Flaticon.com.png"
                                 alt="Card" class="icons"></a>
+                        <span id="shopBadge"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-badge">
+                            0
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -238,10 +252,11 @@
                             <div class="hover-buttons">
                                 <div class="row">
                                     <div class="col">
-                                        <button class="btn"><i class="fa fa-plus-circle"></i></button>
+                                        <button class="btn" id="addToCartButton"><i
+                                                class="fa fa-plus-circle"></i></button>
                                     </div>
                                     <div class="col">
-                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                        <button class="btn" id="likeButton"><i class="fa fa-heart-o"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -251,11 +266,15 @@
                             <div class="card-body">
                                 <p class="card-text">Hay - About A Lounge <br> Chair AAL 93</p>
                                 <div style="display: flex; text-align: center; justify-content: center;">
-                                    <div style="border: 1px solid rgb(0, 0, 0,.2); border-top-left-radius: 15px;border-bottom-left-radius: 15px">
+                                    <div
+                                        style="border: 1px solid rgb(0, 0, 0,.2); border-top-left-radius: 15px;border-bottom-left-radius: 15px">
                                         <p style="color: green;padding-left: 5px;">$659.55</p>
                                     </div>
-                                    <div style="border: 1px solid rgb(0, 0, 0,.2); border-top-right-radius: 15px;border-bottom-right-radius: 15px">
-                                        <a href="#" style="padding-right:5px;text-decoration: none;color: #262a32;"><b>BUY NOW</b></a>
+                                    <div
+                                        style="border: 1px solid rgb(0, 0, 0,.2); border-top-right-radius: 15px;border-bottom-right-radius: 15px">
+                                        <a href="#"
+                                            style="padding-right:5px;text-decoration: none;color: #262a32;"><b>BUY
+                                                NOW</b></a>
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +292,14 @@
                                     | YES</p>
                             </div>
                             <div class="hover-buttons">
-                                <p>Merhaba</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-plus-circle"></i></button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -302,7 +328,14 @@
                                 <p class="card-text">Hay - About A Lounge <br> Chair AAL 93</p>
                             </div>
                             <div class="hover-buttons">
-                                <p>Merhaba</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-plus-circle"></i></button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card text-center">
@@ -311,7 +344,14 @@
                                 <p class="card-text">Activate Facial Mask and Charcoal Soap</p>
                             </div>
                             <div class="hover-buttons">
-                                <p>Merhaba</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-plus-circle"></i></button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card text-center">
@@ -321,7 +361,14 @@
                                     | YES</p>
                             </div>
                             <div class="hover-buttons">
-                                <p>Merhaba</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-plus-circle"></i></button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -339,7 +386,7 @@
                                         <button class="btn"><i class="fa fa-plus-circle"></i></button>
                                     </div>
                                     <div class="col">
-                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                        <button class="btn "><i class="fa fa-heart-o"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -350,7 +397,14 @@
                                 <p class="card-text">Hay - About A Lounge <br> Chair AAL 93</p>
                             </div>
                             <div class="hover-buttons">
-                                <p>Merhaba</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-plus-circle"></i></button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card text-center">
@@ -359,7 +413,14 @@
                                 <p class="card-text">Activate Facial Mask and Charcoal Soap</p>
                             </div>
                             <div class="hover-buttons">
-                                <p>Merhaba</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-plus-circle"></i></button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card text-center">
@@ -369,7 +430,14 @@
                                     | YES</p>
                             </div>
                             <div class="hover-buttons">
-                                <p>Merhaba</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-plus-circle"></i></button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn"><i class="fa fa-heart-o"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -649,6 +717,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/loadMore.js"></script>
     <script src="js/featured-swiper.js"></script>
+    <script src="js/counter.js"></script>
 
 </body>
 

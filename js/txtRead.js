@@ -1,7 +1,6 @@
     let loadTxtBtn = document.querySelector('#txtBttn');
     let spnVis = document.querySelector('#dots');
-    let moreTxt = document.querySelector('#more')
-    console.log('asfasdfasd')
+    let moreTxt = document.querySelector('#more');
 
     loadTxtBtn.onclick = () => {
         if(spnVis.style.display === 'none'){
