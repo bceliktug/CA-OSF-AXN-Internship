@@ -107,14 +107,19 @@
                                 src="images/Profile_User_Outline._Attribute_as_Situ_Herrera_from_Flaticon.com.png"
                                 alt="Profile" class="icons"></a>
                     </li>
-                    <li id="hover-menu-icon">
-                        <a href="#"><img
-                                src="images/Heart_Outline_Rounded_Shape._Attribute_as_Freepik_from_Flaticon.com.png"
-                                alt="Likes" class="icons"></a>
+                    <li id="hover-menu-icon" class="position-relative">
+                        <a href="#"><img src="images/Heart_Outline_Rounded_Shape._Attribute_as_Freepik_from_Flaticon.com.png" alt="Likes"
+                                class="icons"></a>
+                        <span id="likeBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-badge">
+                            0
+                        </span>
                     </li>
-                    <li id="hover-menu-icon">
-                        <a href="#"><img src="images/Bag_For_Shopping._Attribute_as_SimpleIcon_from_Flaticon.com.png"
-                                alt="Card" class="icons"></a>
+                    <li id="hover-menu-icon" class="position-relative">
+                        <a href="#"><img src="images/Bag_For_Shopping._Attribute_as_SimpleIcon_from_Flaticon.com.png" alt="Card"
+                                class="icons"></a>
+                        <span id="shopBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-badge">
+                            0
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -254,6 +259,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src="js/counter.js"></script>
 </body>
 
 </html>
