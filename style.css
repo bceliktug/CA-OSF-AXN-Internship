@@ -2,9 +2,10 @@
     font-family: 'Lato', sans-serif;
 }
 
-html{
+html {
     overflow-x: hidden;
 }
+
 body a:hover {
     text-decoration: none;
 }
@@ -287,8 +288,6 @@ body a:hover {
     display: table-cell;
 }
 
-
-
 .primary {
     min-width: 300px;
     min-height: 200px;
@@ -321,7 +320,7 @@ body a:hover {
 }
 
 .custom-badge {
-    top:5px;
+    top: 5px;
     right: 5px;
     background-color: white !important;
     color: #84bc22 !important;
@@ -329,10 +328,24 @@ body a:hover {
     visibility: hidden;
 }
 
-.amountBtn{
+.amountBtn {
     cursor: pointer;
 
 }
+
+.tabs {
+    padding-top: 4rem;
+    font-size: x-large;
+}
+
+.tabs ul li a {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #262a32;
+}
+
 
 
 #more {
