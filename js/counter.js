@@ -42,11 +42,9 @@ function cartItem(){
     localStorage.setItem('cartItem', itemNumber + 1);
     document.getElementById('shopBadge').innerHTML= itemNumber + 1;
     shopBadge.style.visibility = 'visible';
-    console.log('sadfasfsa');
   }else {
     localStorage.setItem('cartItem', 1);
     document.getElementById('shopBadge').innerHTML= 1;
-    console.log('12345');
     shopBadge.style.visibility = 'visible';
   }
 }
