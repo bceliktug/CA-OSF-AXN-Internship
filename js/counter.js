@@ -18,11 +18,9 @@ function likeItem(){
     localStorage.setItem('likeItem', likeNumber + 1);
     document.getElementById('likeBadge').innerHTML= likeNumber + 1;
     likeBadge.style.visibility = 'visible';
-    console.log('sadfasfsa');
   }else {
     localStorage.setItem('likeItem', 1);
     document.getElementById('likeBadge').innerHTML= 1;
-    console.log('12345');
     likeBadge.style.visibility = 'visible';
   }
 }
