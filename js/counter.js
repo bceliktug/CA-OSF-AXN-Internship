@@ -65,12 +65,3 @@ function onLoadNumber(){
   }
 }
 onLoadNumber();
-
-
-// likeButton.onclick = function click() {
-//   likeCounter += 1;
-//   localStorage.setItem('likeItem', likeCounter);
-//   document.getElementById('likeBadge').innerHTML=likeCounter;
-//   likeBadge.style.visibility = 'visible';
-//   console.log('like like ')
-// };

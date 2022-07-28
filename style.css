@@ -346,7 +346,47 @@ body a:hover {
     color: #262a32;
 }
 
+.cookie{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 999;
+    display: none; 
+}
+.cookie.active{
+    display: flex;
+}
 
+.cookie-content {
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 20%;
+    background-color: white;
+    height: 150px;
+    width: 1000px;
+    display: flex;
+}
+
+.cookie-accept {
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    background-color: #84bc22 !important;
+    color: white !important;
+    border-radius: 50px !important;
+
+}
+.cookie-accept:active{
+    background-color: #a3e82b !important
+}
+
+.cookie-x {
+    top:0;
+    right: 0;
+    position: absolute;
+    
+}
 
 #more {
     display: none;
