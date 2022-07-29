@@ -1,0 +1,325 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown</title>
+</head>
+
+<body>
+
+    <div class="login-tab">
+        <div class="login-contents">
+            <div class="login-text"><b>Sign in</b></div>
+            <form onsubmit="submitLogin(event)">
+                <div class="login-inputs">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" required id="email" name="email" class="email-input">
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <div style="display: flex;justify-content: space-between;">
+                            <label for="password">Password</label>
+                            <p style="color: #84bc22; font-size: 12px;">Forgot Password</p>
+                        </div>
+                        <div style="position: relative;">
+                            <input type="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])([A-Za-z\d]{8,})$" required
+                                id="password" name="password" class="password-input">
+                            <i class="fa fa-eye" onmousedown="toggleInputType()"
+                                style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);"
+                                aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn login-btn">
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <!-- Header-Navigation Bar -->
+        <nav id="navigation">
+            <a href="#" class="osf-icon"><img src="images/logo.png" style="width: 147px; height: 64px;" id="logo"
+                    alt="HomePage"></a>
+            <div style="width: 100%;">
+                <ul class="top-elements">
+                    <li class="dropdown" id="hover-menu">
+                        <p>SERVICES</p><i class="fa fa-sort-down" style="padding-bottom: 20px ;"></i>
+                        <div class="dropdown-content">
+                            <div class="content row">
+                                <div class="col" style="text-align: left;">
+                                    <header>
+                                        PRODUCT CATEGORIES
+                                    </header>
+                                    <ul class="content-links row">
+                                        <div class="col">
+                                            <li><a href="errPage.html">Accessories</a></li>
+                                            <li><a href="errPage.html">Alcohol</a></li>
+                                            <li><a href="errPage.html">Art</a></li>
+                                            <li><a href="errPage.html">Books</a></li>
+                                            <li><a href="errPage.html">Drink</a></li>
+                                            <li><a href="errPage.html">Electronics</a></li>
+                                            <li><a href="errPage.html">Flowers & Plants</a></li>
+                                            <li><a href="errPage.html">Food</a></li>
+                                        </div>
+                                        <div class="col">
+                                            <li><a href="errPage.html">Gadgets</a></li>
+                                            <li><a href="errPage.html">Garden</a></li>
+                                            <li><a href="errPage.html">Grocery</a></li>
+                                            <li><a href="errPage.html">Home</a></li>
+                                            <li><a href="errPage.html">Jewelry</a></li>
+                                            <li><a href="errPage.html">Kids & Baby</a></li>
+                                            <li><a href="errPage.html">Men's Fashion</a></li>
+                                            <li><a href="errPage.html">Mobile</a></li>
+                                        </div>
+                                        <div class="col">
+                                            <li><a href="errPage.html">Motorcycles</a></li>
+                                            <li><a href="errPage.html">Movies</a></li>
+                                            <li><a href="errPage.html">Music</a></li>
+                                            <li><a href="errPage.html">Office</a></li>
+                                            <li><a href="errPage.html">Pets</a></li>
+                                            <li><a href="errPage.html">Romantic</a></li>
+                                            <li><a href="errPage.html">Sport</a></li>
+                                            <li><a href="errPage.html">Toys</a></li>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="col" style="text-align: left;">
+                                    <header>SALE</header>
+                                    <ul class="content-links">
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Alcohol</a></li>
+                                        <li><a href="#">Art</a></li>
+                                        <li><a href="#">Books</a></li>
+                                        <li><a href="#">Drink</a></li>
+                                        <li><a href="#">Electronics</a></li>
+                                        <li><a href="#">Flowers & Plants</a></li>
+                                        <li><a href="#">Food</a></li>
+                                    </ul>
+                                </div>
+                                <div id="girl-image col">
+                                    <img src="images/Girl-Img.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="hover-menu">
+                        <p>COMPANY</p>
+                    </li>
+                    <li id="hover-menu">
+                        <p>LIBRARY</p>
+                    </li>
+                    <li id="hover-menu">
+                        <p>CONTACT US</p>
+                    </li>
+                    <li id="hover-menu-icon">
+                        <p style="color: #959191;">EN</p><i class="fa fa-sort-down"
+                            style="color: #959191; padding-bottom: 20px ;"></i>
+                    </li>
+                    <li id="hover-menu-icon">
+                        <p style="color: #959191;">$ US</p><i class="fa fa-sort-down"
+                            style="color: #959191; padding-bottom: 20px ;"></i>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/Search_Information._Attribute_as_Designmodo_from_Flaticon.com.png"
+                                alt="Search" class="icons"></a>
+                    </li>
+                    <li>
+                        <a><img id="user-login"
+                                src="images/Profile_User_Outline._Attribute_as_Situ_Herrera_from_Flaticon.com.png"
+                                alt="Profile" class="icons"></a>
+                    </li>
+
+                    <li class="position-relative">
+                        <a><img src="images/Heart_Outline_Rounded_Shape._Attribute_as_Freepik_from_Flaticon.com.png"
+                                alt="Likes" class="icons"></a>
+                        <span id="likeBadge"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-badge">
+                            0
+                        </span>
+                    </li>
+                    <li class="position-relative">
+                        <a href="#"><img src="images/Bag_For_Shopping._Attribute_as_SimpleIcon_from_Flaticon.com.png"
+                                alt="Card" class="icons"></a>
+                        <span id="shopBadge"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill custom-badge">
+                            0
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div
+            style="background-color: #f1edea; width: 100%; height: auto; text-align: center; justify-content: center;padding: 4rem;">
+            <div class="container white-border">
+                <div class="counter-text">
+                    <h1>We Will Release OSF Academy</h1>
+                    <p style="margin: 2rem 17rem 2rem 17rem;">We are working hard and estimated release time
+                        products below.
+                        Sed ac tristique nunc, ut gravida nunc. Nulla consequat erat non lectus imperdiet.</p>
+                </div>
+                <div class="countdown" id="countdown">
+                    <div class="time">
+                        <p id="days"><b>00</b></p>
+                        <h3>Days</h3>
+                    </div>
+                    <div class="time">
+                        <p id="hours"><b>00</b></p>
+                        <h3>Hours</h3>
+                    </div>
+                    <div class="time">
+                        <p id="minutes"><b>00</b></p>
+                        <h3>Minutes</h3>
+                    </div>
+                    <div class="time">
+                        <p id="seconds"><b>00</b></p>
+                        <h3>Seconds</h3>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content row">
+                    <div class="col">
+                        <p> &copy; Copyright 2019. <br>
+                            All Rights Reserved.</p>
+                        <p><b>CONTACT</b></p>
+                        <p>Headquarters:</p>
+                        <p> 5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6 </p>
+                        <p>contact@osf-global.com</p>
+                        <p>+1 (888) 548-4344</p>
+                    </div>
+
+                    <div class="col">
+                        <p><b>CATEGORIEST</b></p>
+                        <a href="#">Alcohol</a>
+                        <br>
+                        <a href="#">Art</a>
+                        <br>
+                        <a href="#">Books</a>
+                        <br>
+                        <a href="#">Drink</a>
+                        <br>
+                        <a href="#">Electronics</a>
+
+                    </div>
+                    <div class="col">
+                        <div style="padding-top: 37px;">
+                            <a href="#">Home</a>
+                        </div>
+                        <a href="#">Jewelry</a>
+                        <br>
+                        <a href="#">Kids & Baby</a>
+                        <br>
+                        <a href="#">Men's Fashion</a>
+                        <br>
+                        <a href="#">Mobile</a>
+                        <br>
+                        <a href="#">Motorcycles</a>
+                        <br>
+                        <a href="#">Movies</a>
+                        <br>
+                        <a href="#">Music</a>
+                    </div>
+
+                    <div class="col">
+                        <div style="padding-top: 37px;">
+                            <a href="#">Sport</a>
+                        </div>
+                        <a href="#">Toys</a>
+                        <br>
+                        <a href="#">Travel</a>
+                        <br>
+                        <a href="#">Women's Fashion</a>
+                    </div>
+
+                    <div class="col">
+                        <p> <b>ABOUT</b> </p>
+                        <a href="#">About Us</a>
+                        <br>
+                        <a href="#">Delivey</a>
+                        <br>
+                        <a href="#">Testimonials</a>
+                        <br>
+                        <a href="#">Contact</a>
+                    </div>
+
+                    <div class="col">
+                        <div class="row" style="justify-content: space-evenly;">
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/featured-swiper.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/login-actions.js"></script>
+        <script src="js/countdown.js"></script>
+        <script>
+            var submitLogin = function (event) {
+                event.preventDefault();
+                console.log(event.target);
+                var formObj = new FormData(event.target);
+
+                for (var key of formObj.keys()) {
+                    console.log("Key: ", key)
+                }
+                console.log(formObj.get("email"));
+                console.log(formObj.get("password"));
+
+                // var content = {email: formObj.get("email"), password: formObj.get("password")};
+                // file = fopen("C:\Users\bulut\Desktop\CA-OSF-AXN-Internship\test.txt", 3);
+                // fwrite(file, JSON.stringify(content));
+            }
+
+            var toggleInputType = function () {
+                var inputElem = document.getElementById("password");
+                if (inputElem.type == "password") {
+                    inputElem.type = "text"
+                } else if (inputElem.type == "text") {
+                    inputElem.type = "password"
+
+                }
+            }
+        </script>
+</body>
+
+</html>

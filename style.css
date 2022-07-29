@@ -129,6 +129,30 @@ body a:hover {
     border-bottom-right-radius: calc(0.25rem - 1px);
 }
 
+.linear-card {
+    background: linear-gradient(to top, rgba(103, 91, 153, .9), rgba(220, 89, 135, .9)), url('images/linear-cardImg.jpg');
+    background-size: cover;
+}
+
+.linear-text {
+    color: white;
+    width: 60%;
+    margin-left: 1rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.linear-text2 {
+    display: flex;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#user-think {
+    height: fit-content;
+}
+
 .hover-buttons {
     display: none;
     justify-content: center;
@@ -167,6 +191,14 @@ body a:hover {
     color: white;
     font-size: 86px;
     cursor: pointer;
+}
+
+.popular-items .btn:hover {
+    color: rgb(91, 91, 91);
+}
+
+.popular-items .btn:focus {
+    box-shadow: none;
 }
 
 .banner {
@@ -437,13 +469,14 @@ body a:hover {
 }
 
 
-.nav.nav-tabs>li.active>a, .nav.nav-tabs>li.active>a:focus {
+.nav.nav-tabs>li.active>a,
+.nav.nav-tabs>li.active>a:focus {
     background-color: #262a32;
     color: white;
-    
+
 }
 
-.tab-content > .tab-pane > .row > .col {
+.tab-content>.tab-pane>.row>.col {
     margin: 2rem 1rem;
     font-size: 20spx;
 
@@ -574,6 +607,43 @@ body a:hover {
 
 #services-top .col {
     padding-top: 18px;
+}
+
+/* CounterCss */
+.white-border {
+    padding: 4rem 0rem;
+    justify-content: center;
+    text-align: center;
+    background: white !important;
+}
+
+.countdown {
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    font-size: 45px;
+
+}
+
+.counter-text {
+    text-align: center;
+    justify-content: center;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.time>p {
+    border: solid 3px #cfc7c7;
+    border-radius: 100%;
+    padding: 2rem 3rem;
 }
 
 
