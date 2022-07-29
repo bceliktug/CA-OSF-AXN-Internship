@@ -10,8 +10,8 @@ var yyyy = currentDate.getFullYear();
 let releaseTime = new Date(`August 29 2022 00:00:00`);
 
 function updateCountDown() {
-    let currentTime = new Date();
-    let diff = releaseTime - currentDate;
+    let currentTime = new Date().getTime();
+    let diff = releaseTime - currentTime;
     let d = Math.floor(diff/1000/60/60/24);
     let h = Math.floor(diff/1000/60/60) %24;
     let m = Math.floor(diff/1000/60) % 60;
@@ -20,7 +20,5 @@ function updateCountDown() {
     hours.innerHTML = h <10 ? '0' + h:h;
     minutes.innerHTML = m <10 ? '0' + m:m;
     seconds.innerHTML = s <10 ? '0' + s:s;
-
-
 }
 setInterval(updateCountDown, 1000);

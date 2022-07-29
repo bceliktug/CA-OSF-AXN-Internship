@@ -36,7 +36,6 @@
                                 style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);"
                                 aria-hidden="true"></i>
                         </div>
-
                     </div>
                     <button type="submit" class="btn login-btn">
                         Login
@@ -48,7 +47,7 @@
     <div>
         <!-- Header-Navigation Bar -->
         <nav id="navigation">
-            <a href="#" class="osf-icon"><img src="images/logo.png" style="width: 147px; height: 64px;" id="logo"
+            <a href="home-page.html" class="osf-icon"><img src="images/logo.png" style="width: 147px; height: 64px;" id="logo"
                     alt="HomePage"></a>
             <div style="width: 100%;">
                 <ul class="top-elements">
@@ -186,9 +185,13 @@
                         <h3>Seconds</h3>
                     </div>
                 </div>
+                <form action="">
+                    <div style="position: relative;">
+                        <input type="email" required name="email" class="save-email">
+                        <i class="fa fa-arrow-right save-btn" aria-hidden="true"></i>
+                    </div>      
+                </form>
             </div>
-
-
         </div>
 
 
@@ -293,6 +296,7 @@
         <script src="js/counter.js"></script>
         <script src="js/login-actions.js"></script>
         <script src="js/countdown.js"></script>
+        <script src="js/saveMail.js"></script>
         <script>
             var submitLogin = function (event) {
                 event.preventDefault();

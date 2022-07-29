@@ -1,6 +1,6 @@
 let decreaseButton = document.getElementById('decrease');
 let greenButton = document.getElementById('greenButton');
-
+let increaseButton = document.getElementById('increase');
 
 let amountNumber = 0;
 increaseButton.onclick = () => {

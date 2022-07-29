@@ -1,6 +1,6 @@
 let addToCartButton = document.querySelectorAll('.addToCartButton');
 let likeButton = document.querySelectorAll('.likeButton');
-let increaseButton = document.getElementById('increase');
+
 
 
 

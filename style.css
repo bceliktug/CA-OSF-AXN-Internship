@@ -45,7 +45,7 @@ body a:hover {
 }
 
 .dropdown-content {
-    top: 4.5rem;
+    top: 4.2rem;
     position: fixed;
     left: 0;
     right: 0;
@@ -53,6 +53,7 @@ body a:hover {
     min-width: 100%;
     z-index: 1;
 }
+
 
 .dropdown-content .content {
     background-color: #262a32;
@@ -586,12 +587,7 @@ body a:hover {
 #hover-menu:hover {
     background-color: #262a32;
     color: #ffffff !important;
-    border-bottom: 4px solid #84bc22;
-}
-
-#hover-menu-icon:hover {
-    background-color: #dddddd;
-    color: #ffffff !important;
+    padding: 10px 10px 13px 10px;
     border-bottom: 4px solid #84bc22;
 }
 
@@ -644,6 +640,21 @@ body a:hover {
     border: solid 3px #cfc7c7;
     border-radius: 100%;
     padding: 2rem 3rem;
+}
+
+.save-email {
+    margin-top: 2rem;
+    width: 50%;
+    border-radius: 15px;
+    border-color: grey;
+}
+
+.save-btn {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3px;
+    position: relative;
+    transform: translate(-33px, 0px);
 }
 
 
