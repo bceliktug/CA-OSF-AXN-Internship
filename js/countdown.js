@@ -12,10 +12,12 @@ let releaseTime = new Date(`August 29 2022 00:00:00`);
 function updateCountDown() {
     let currentTime = new Date().getTime();
     let diff = releaseTime - currentTime;
+    console.log(diff);
     let d = Math.floor(diff/1000/60/60/24);
-    let h = Math.floor(diff/1000/60/60) %24;
+    let h = Math.ceil(diff/1000/60/60) %24;
     let m = Math.floor(diff/1000/60) % 60;
     let s = Math.floor(diff/1000) % 60;
+    console.log(h)
     testSecDay.innerHTML = d;
     testHour.innerHTML = h < 10 ? '0' + h:h;
     testMin.innerHTML = m < 10 ? '0' + m:m;
