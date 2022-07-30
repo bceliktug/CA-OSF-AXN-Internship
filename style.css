@@ -51,7 +51,7 @@ body a:hover {
     right: 0;
     visibility: hidden;
     min-width: 100%;
-    z-index: 1;
+    z-index: 99;
 }
 
 
@@ -103,6 +103,12 @@ body a:hover {
 .carousel-caption {
     top: 10%;
     bottom: auto;
+}
+
+#carouselExampleIndicators > ol > li{
+    border-radius: 100%;
+    width: 12px;
+        height: 12px;
 }
 
 
@@ -507,11 +513,6 @@ body a:hover {
     padding: 0 10px;
 }
 
-#lined-404 {
-
-    text-align: center;
-}
-
 #lined-404 p {
 
     font-size: 48px;
@@ -667,4 +668,251 @@ body a:hover {
         url('698242188-Lato-Bla.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+.progress {
+    width: 150px;
+    height: 150px !important;
+    float: left;
+    line-height: 150px;
+    background: none;
+    margin: 20px;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid rgb(207, 207, 207);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-right .seconds-bar {
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-right .day-bar {
+    animation: loading-3 1.8s linear forwards;
+}
+
+.progress .progress-right .hour-bar {
+    animation: loading-5 1.8s linear forwards;
+}
+.progress .progress-right .minutes-bar {
+    animation: loading-7 1.8s linear forwards;
+}
+
+.progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: white;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.progress.seconds .progress-bar {
+    border-color: #84bc22;
+}
+
+.progress.day .progress-bar {
+    border-color: #84bc22;
+}
+
+.progress.hour .progress-bar {
+    border-color: #84bc22;
+}
+
+.progress.minutes .progress-bar {
+    border-color: #84bc22;
+}
+
+.progress.seconds .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.day .progress-left .progress-bar {
+    animation: loading-4 1.5s linear forwards 1.8s;
+}
+
+.progress.hour .progress-left .progress-bar {
+    animation: loading-6 1.5s linear forwards 1.8s;
+}
+
+.progress.minutes .progress-left .progress-bar {
+    animation: loading-8 1.5s linear forwards 1.8s;
+}
+
+
+
+:root {
+    --first-start-deg-sec: 0deg;
+    --first-end-deg-sec: 180deg;
+    --last-start-deg-sec: 0deg;
+    --last-end-deg-sec: 100deg;
+    --first-start-deg-day: 0deg;
+    --first-end-deg-day: 180deg;
+    --last-start-deg-day: 0deg;
+    --last-end-deg-day: 100deg;
+    --first-start-deg-hour: 0deg;
+    --first-end-deg-hour: 180deg;
+    --last-start-deg-hour: 0deg;
+    --last-end-deg-hour: 100deg;
+    --first-start-deg-min: 0deg;
+    --first-end-deg-min: 180deg;
+    --last-start-deg-min: 0deg;
+    --last-end-deg-min: 100deg;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(var(--first-start-deg-sec));
+        transform: rotate(var(--first-start-deg-sec));
+    }
+
+    100% {
+        -webkit-transform: rotate(var(--first-end-deg-sec));
+        transform: rotate(var(--first-end-deg-sec));
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(var(--last-start-deg-sec));
+        transform: rotate(var(--last-start-deg-sec));
+    }
+
+    100% {
+        -webkit-transform: rotate(var(--last-end-deg-sec));
+        transform: rotate(var(--last-end-deg-sec));
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(var(--first-start-deg-day));
+        transform: rotate(var(--first-start-deg-day));
+    }
+
+    100% {
+        -webkit-transform: rotate(var(--first-end-deg-day));
+        transform: rotate(var(--first-end-deg-day));
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(var(--last-start-deg-day));
+        transform: rotate(var(--last-start-deg-day));
+    }
+
+    100% {
+        -webkit-transform: rotate(var(--last-end-deg-day));
+        transform: rotate(var(--last-end-deg-day));
+    }
+}
+
+@keyframes loading-5 {
+    0% {
+        -webkit-transform: rotate(var(--first-start-deg-hour));
+        transform: rotate(var(--first-start-deg-hour));
+    }
+
+    100% {
+        -webkit-transform: rotate(var(--first-end-deg-hour));
+        transform: rotate(var(--first-end-deg-hour));
+    }
+}
+
+@keyframes loading-6 {
+    0% {
+        -webkit-transform: rotate(var(--last-start-deg-hour));
+        transform: rotate(var(--last-start-deg-hour));
+    }
+
+    100% {
+        -webkit-transform: rotate(var(--last-end-deg-hour));
+        transform: rotate(var(--last-end-deg-hour));
+    }
+}
+
+@keyframes loading-7 {
+    0% {
+        -webkit-transform: rotate(var(--first-start-deg-min));
+        transform: rotate(var(--first-start-deg-min));
+    }
+
+    100% {
+        -webkit-transform: rotate(var(--first-end-deg-min));
+        transform: rotate(var(--first-end-deg-min));
+    }
+}
+
+@keyframes loading-8 {
+    0% {
+        -webkit-transform: rotate(var(--last-start-deg-min));
+        transform: rotate(var(--last-start-deg-min));
+    }
+
+    100% {
+        -webkit-transform: rotate(var(--last-end-deg-min));
+        transform: rotate(var(--last-end-deg-min));
+    }
 }

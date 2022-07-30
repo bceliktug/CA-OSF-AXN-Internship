@@ -47,8 +47,8 @@
     <div>
         <!-- Header-Navigation Bar -->
         <nav id="navigation">
-            <a href="home-page.html" class="osf-icon"><img src="images/logo.png" style="width: 147px; height: 64px;" id="logo"
-                    alt="HomePage"></a>
+            <a href="home-page.html" class="osf-icon"><img src="images/logo.png" style="width: 147px; height: 64px;"
+                    id="logo" alt="HomePage"></a>
             <div style="width: 100%;">
                 <ul class="top-elements">
                     <li class="dropdown" id="hover-menu">
@@ -169,27 +169,64 @@
                 </div>
                 <div class="countdown" id="countdown">
                     <div class="time">
-                        <p id="days"><b>00</b></p>
+                        <div id="day" class="progress day">
+                            <span class="progress-left">
+                                <span class="progress-bar day-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar day-bar"></span>
+                            </span>
+                            <div id="testCountDownDay" class="progress-value">0</div>
+                        </div>
                         <h3>Days</h3>
                     </div>
                     <div class="time">
-                        <p id="hours"><b>00</b></p>
+                        <div id="hour" class="progress hour">
+                            <span class="progress-left">
+                                <span class="progress-bar hour-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar hour-bar"></span>
+                            </span>
+                            <div id="testCountDownHour" class="progress-value">0</div>
+                        </div>
                         <h3>Hours</h3>
                     </div>
                     <div class="time">
-                        <p id="minutes"><b>00</b></p>
+                        <div id="minutes" class="progress minutes">
+                            <span class="progress-left">
+                                <span class="progress-bar minutes-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar minutes-bar"></span>
+                            </span>
+                            <div id="testCountDownMin" class="progress-value">0</div>
+                        </div>
                         <h3>Minutes</h3>
                     </div>
+
                     <div class="time">
-                        <p id="seconds"><b>00</b></p>
+                        <div id="seconds" class="progress seconds">
+                            <span class="progress-left">
+                                <span class="progress-bar seconds-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar seconds-bar"></span>
+                            </span>
+                            <div id="testCountDown" class="progress-value">0</div>
+                        </div>
                         <h3>Seconds</h3>
                     </div>
                 </div>
+
+
+
+
                 <form action="">
                     <div style="position: relative;">
                         <input type="email" required name="email" class="save-email">
                         <i class="fa fa-arrow-right save-btn" aria-hidden="true"></i>
-                    </div>      
+                    </div>
                 </form>
             </div>
         </div>
