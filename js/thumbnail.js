@@ -10,4 +10,4 @@ for (let index = 0; index < thumbnail.length; index++) {
         $img.style.backgroundImage = `url(${newSelection})`;
     }; 
 }
-  
+
